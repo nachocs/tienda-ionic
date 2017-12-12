@@ -1,0 +1,23 @@
+page-home {
+  .producto-img{
+    max-width: 100%;
+    height: auto;
+    max-height: 390px;
+    width: auto;
+    margin: 0 auto;
+  }
+  @media screen and (min-width: 480px) {
+    .producto-img{
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 10px;
+    }
+    .producto-content{
+      display: inline-block;
+    }
+  }
+  .basket{
+    font-size: 24px;
+    color: black;
+  }
+}

@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Tienda</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+
+  <ion-card *ngFor="let producto of productos">
+    <ion-card-header>
+      <span [innerHTML]="producto.subject"></span>
+    </ion-card-header>
+    <ion-card-content>
+      <img class="producto-img" [src]="producto.IMAGEN1_URL" [height]="producto.IMAGEN_alto" [width]="producto.IMAGEN_ancho"/>
+      <p class="producto-content" [innerHTML]="producto.encabezamiento"></p>
+    </ion-card-content>
+    <ion-row justify-content-end>
+      <ion-col col-2 ion-button clear style="text-align:right;"><ion-icon name="basket" class="basket" alt="Añadir a la cesta"></ion-icon></ion-col>
+    </ion-row>
+  </ion-card>
+
+</ion-content>
